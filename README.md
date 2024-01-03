@@ -34,10 +34,3 @@ JWT_SECRET="your_jwt_secret"
 ```bash
 npm run dev
 ```
-
-## Running Tests
-Tests are located in the `__tests__` folder and are automatically detected by Jest
-To run the test suite, use:
-```bash
-npm test
-```
