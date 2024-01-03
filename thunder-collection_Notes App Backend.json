@@ -1,0 +1,155 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Notes App Backend",
+    "dateExported": "2024-01-03T08:03:20.684Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "44236b21-3694-41c4-a74b-6136c7db3667",
+            "colId": "0bcd9486-f647-4886-b50b-3da7d994aed4",
+            "containerId": "",
+            "name": "Signup",
+            "url": "http://localhost:3000/api/auth/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-03T05:57:26.363Z",
+            "modified": "2024-01-03T06:59:46.400Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"username\": \"yathin17\",\r\n    \"password\": \"userpassword\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cae36936-a79b-4f22-afbd-87772a71fbab",
+            "colId": "0bcd9486-f647-4886-b50b-3da7d994aed4",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:3000/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-03T05:58:34.233Z",
+            "modified": "2024-01-03T07:58:52.520Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"username\": \"yathin017\",\r\n    \"password\": \"userpassword\"\r\n}\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1d83d9f8-fd3b-46c0-b008-9b8cdcad4143",
+            "colId": "0bcd9486-f647-4886-b50b-3da7d994aed4",
+            "containerId": "",
+            "name": "Create Note",
+            "url": "http://localhost:3000/api/notes",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-03T06:13:04.694Z",
+            "modified": "2024-01-03T06:30:49.769Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTk0ZmVhYjFkMmQ5YTRiMGQ1MzY4ZDkiLCJpYXQiOjE3MDQyNjMzNjd9.ZK755In3-l98d9e88NsyQXVbHTLf9HAyOWfgtU27Zfs"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"title\": \"My New Note2 created by Yathin\",\r\n  \"content\": \"This is the content of my new note.\"\r\n}\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f5b38618-d1c0-4cb8-9a9c-7d11fb4c0c8a",
+            "colId": "0bcd9486-f647-4886-b50b-3da7d994aed4",
+            "containerId": "",
+            "name": "Get All Notes",
+            "url": "http://localhost:3000/api/notes",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-01-03T06:19:45.851Z",
+            "modified": "2024-01-03T07:30:20.096Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTk0ZmVhYjFkMmQ5YTRiMGQ1MzY4ZDkiLCJpYXQiOjE3MDQyNjcwMDV9.hURuRmlkhsReOGNv3W-0he90qMAvQe1TWCGr7riR2IQ"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9c68c085-8226-491f-afa3-d6fe85c673d8",
+            "colId": "0bcd9486-f647-4886-b50b-3da7d994aed4",
+            "containerId": "",
+            "name": "Share",
+            "url": "http://localhost:3000/api/notes/6594ff19776dd3a8385f4f64/share",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-01-03T06:28:27.955Z",
+            "modified": "2024-01-03T07:59:41.836Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTk0ZmVhYjFkMmQ5YTRiMGQ1MzY4ZDkiLCJpYXQiOjE3MDQyNjg3MzJ9.lFMeS67x3MBHXEyxiQWx6B4cpsdY3EHS4ET4bj3XTG0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"userId\": \"6594f773c5b478d036877f93\"\r\n}\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d4707c6d-f43c-46e6-abef-ecd95d001ee4",
+            "colId": "0bcd9486-f647-4886-b50b-3da7d994aed4",
+            "containerId": "",
+            "name": "Search",
+            "url": "http://localhost:3000/api/notes/search?q=new",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-01-03T06:36:30.061Z",
+            "modified": "2024-01-03T07:58:03.508Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTk0Zjc3M2M1YjQ3OGQwMzY4NzdmOTMiLCJpYXQiOjE3MDQyNjg2NTR9.7Qyy1JnAlf5dhmhJC7yilNvNpAR7m9ym-0MoTOrPpI8"
+                }
+            ],
+            "params": [
+                {
+                    "name": "q",
+                    "value": "new",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
